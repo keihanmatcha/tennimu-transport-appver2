@@ -13,30 +13,30 @@ import pandas as pd
 # 会場ファイル構成
 files = {
     "大阪①（2025/07/19-20）": {
-        "往路1: 東京→新大阪": r"C:\交通費\新幹線　大阪\tokyo_shinosaka_20250719_real_full.csv",
-        "往路2: 新大阪→大阪": r"C:\交通費\新幹線　大阪\osaka_shinosaka0719 - コピー.csv",
-        "復路1: 大阪→新大阪": r"C:\交通費\新幹線　大阪\shinosaka_osaka0720-コピー.csv",
-        "復路2: 新大阪→東京": r"C:\交通費\新幹線　大阪\shinosaka_tokyo_20250720_timetable_fare.csv",
+        "往路1: 東京→新大阪": "tnmhyver2/transportation/osaka/tokyo_shinosaka_20250719_real_full.csv",
+        "往路2: 新大阪→大阪": "tnmhyver2/transportation/osaka/osaka_shinosaka0719 - コピー.csv",
+        "復路1: 大阪→新大阪": "tnmhyver2/transportation/osaka/shinosaka_osaka0720-コピー.csv",
+        "復路2: 新大阪→東京": "tnmhyver2/transportation/osaka/shinosaka_tokyo_20250720_timetable_fare.csv",
     },
     "大阪②（2025/07/26-27）": {
-        "往路1: 東京→新大阪": r"C:\交通費\新幹線　大阪\tokyo_shinosaka_20250726_real_full.csv",
-        "往路2: 新大阪→大阪": r"C:\交通費\新幹線　大阪\osaka_shinosaka0726 - コピー.csv",
-        "復路1: 大阪→新大阪": r"C:\交通費\新幹線　大阪\shinosaka_osaka0727-コピー.csv",
-        "復路2: 新大阪→東京": r"C:\交通費\新幹線　大阪\shinosaka_tokyo_20250727_timetable_fare.csv",
+        "往路1: 東京→新大阪": "tnmhyver2/transportation/osaka/tokyo_shinosaka_20250726_real_full.csv",
+        "往路2: 新大阪→大阪": "tnmhyver2/transportation/osaka/osaka_shinosaka0726 - コピー.csv",
+        "復路1: 大阪→新大阪": "tnmhyver2/transportation/osaka/shinosaka_osaka0727-コピー.csv",
+        "復路2: 新大阪→東京": "tnmhyver2/transportation/osaka/shinosaka_tokyo_20250727_timetable_fare.csv",
     },
     "岐阜（2025/08/02-03）": {
-        "往路1: 東京→名古屋": r"C:\交通費\新幹線　名古屋\tokyo_nozomi_nagoya_fare.csv",
-        "往路2: 名古屋→土岐市": r"C:\交通費\新幹線　名古屋\nagoya_tokishi_chuo_20250802.csv",
-        "復路1: 土岐市→名古屋": r"C:\交通費\新幹線　名古屋\tokishi_nagoya_custom_textpattern.csv",
-        "復路2: 名古屋→東京": r"C:\交通費\新幹線　名古屋\nagoya_tokyo_nozomi_20250803.csv",
+        "往路1: 東京→名古屋": "tnmhyver2/transportation/gihu/tokyo_nozomi_nagoya_fare.csv",
+        "往路2: 名古屋→土岐市": "tnmhyver2/transportation/gihu/nagoya_tokishi_chuo_20250802.csv",
+        "復路1: 土岐市→名古屋": "tnmhyver2/transportation/gihu/tokishi_nagoya_custom_textpattern.csv",
+        "復路2: 名古屋→東京": "tnmhyver2/transportation/gihu/nagoya_tokyo_nozomi_20250803.csv",
     },
     "福岡（2025/08/16-17）": {
-        "往路1: 成田空港→福岡空港": r"C:\交通費\hukuoka\20250816naritahukuoka.csv",
-        "往路2: 福岡空港→博多": r"C:\交通費\hukuoka\fukuoka_airport_to_hakata_timetable.csv",
-        "往路3: 博多→久留米": r"C:\交通費\hukuoka\hakata_to_kurume.csv",
-        "復路1: 久留米→博多": r"C:\交通費\hukuoka\kurume_to_hakata.csv",
-        "復路2: 博多→福岡空港": r"C:\交通費\hukuoka\hakata_to_fukuoka_airport_timetable.csv",
-        "復路3: 福岡空港→成田空港": r"C:\交通費\hukuoka\20250817hukuokanarita.csv",
+        "往路1: 成田空港→福岡空港": "tnmhyver2/transportation/hukuoka/20250816naritahukuoka.csv",
+        "往路2: 福岡空港→博多": "tnmhyver2/transportation/fukuoka/fukuoka_airport_to_hakata_timetable.csv",
+        "往路3: 博多→久留米": "tnmhyver2/transportation/hukuoka/hakata_to_kurume.csv",
+        "復路1: 久留米→博多": "tnmhyver2/transportation/hukuoka/kurume_to_hakata.csv",
+        "復路2: 博多→福岡空港": "tnmhyver2/transportation/hukuoka/hakata_to_fukuoka_airport_timetable.csv",
+        "復路3: 福岡空港→成田空港": "tnmhyver2/transportation/hukuoka/20250817hukuokanarita.csv",
     },
 }
 
