@@ -128,6 +128,7 @@ with tab1:
 
             if squeeze_keys:
                 st.markdown("## 💡 条件を1つ外したときの価格比較")
+                all_relaxed_prices = []  # ← ここで初期化（重要）
                 for key in squeeze_keys:
                     relaxed = ",".join(k for k in squeeze_keys if k != key)
                     relaxed_prices = []
