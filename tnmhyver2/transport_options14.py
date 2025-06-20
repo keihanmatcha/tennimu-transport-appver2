@@ -159,6 +159,7 @@ with tab1:
                             relaxed_prices.append({"会場": area["area_name"], "条件": f"{key}除外", "最安値": min_price})
                     if relaxed_prices:
                         st.dataframe(pd.DataFrame(relaxed_prices))
+                        all_relaxed_prices.extend(relaxed_prices)
                 st.session_state["relaxed_price_diffs"] = all_relaxed_prices  # ←追加
 
         if all_area_results:
@@ -175,7 +176,6 @@ with tab1:
                 selected = st.selectbox("選択してください", options.tolist(), key=f"hotel_{area}")
                 selected_row = df.iloc[options.tolist().index(selected)]
                 selected_hotel_plans[area] = selected_row
-                all_relaxed_prices.extend(relaxed_prices)
             # session_state に保存
     st.session_state["selected_hotel_plans"] = selected_hotel_plans
 
@@ -309,7 +309,7 @@ with tab5:
         st.info("tab1でホテル検索を行い、こだわり条件を指定してください。")
     else:
         df = pd.DataFrame(relaxed_data)
-        pivot_df = df.pivot(index="会場", columns="条件", values="価格差")
+        pivot_df = df.pivot(index="会場", columns="条件", values=""最安値")
 
         st.markdown("#### 📊 各条件を緩和したときの最安価格（円）")
         st.dataframe(pivot_df.style.format("{:.0f} 円"))
