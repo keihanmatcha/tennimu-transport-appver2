@@ -158,7 +158,7 @@ with tab1:
                             relaxed_prices.append({"会場": area["area_name"], "条件": f"{key}除外", "最安値": min_price})
                     if relaxed_prices:
                         st.dataframe(pd.DataFrame(relaxed_prices))
-              st.session_state["relaxed_price_diffs"] = all_relaxed_prices  # ←追加
+                st.session_state["relaxed_price_diffs"] = all_relaxed_prices  # ←追加
 
         if all_area_results:
             st.markdown("## 🏨 全会場の条件に合ったホテル一覧（統合表示）")
@@ -174,8 +174,9 @@ with tab1:
                 selected = st.selectbox("選択してください", options.tolist(), key=f"hotel_{area}")
                 selected_row = df.iloc[options.tolist().index(selected)]
                 selected_hotel_plans[area] = selected_row
+                all_relaxed_prices.extend(relaxed_prices)
             # session_state に保存
-            st.session_state["selected_hotel_plans"] = selected_hotel_plans
+    st.session_state["selected_hotel_plans"] = selected_hotel_plans
 
 
 # --------------------- タブ2: 交通費セレクター ---------------------
